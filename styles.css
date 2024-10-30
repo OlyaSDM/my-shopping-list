@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: 'Prompt', sans-serif;
+}
+
+body {
+	background-image: url(assets/images/bg1.png);
+	background-size: cover;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: -80px;
+}
+
+button {
+	border: none;
+	outline: none;
+	width: 60px;
+	height: 60px;
+	background-color: #031a6d;
+	color: white;
+	cursor: pointer;
+	border-radius: 4px;
+	margin-top: 24px;
+	margin-left: 10px;
+}
+
+.plus {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+h1 {
+	font-size: 46px;
+	font-weight: bold;
+	background: linear-gradient(to left, #0c013d, #0309c3, #11014f);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+#input-box {
+	border: none;
+	width: 80%;
+	height: 50px;
+	box-shadow: 10px 5px 20px #b4b4b5;
+	border-radius: 4px;
+	background-color: #ffffff;
+	padding-left: 10px;
+	margin-top: 30px;
+}
+
+.todo-app {
+	width: 100%;
+	max-width: 540px;
+
+	margin: 100px auto;
+	padding: 40px 30px 70px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+
+button:hover {
+	background-color: #0362a1;
+}
+
+
+ul li {
+	list-style: none;
+	padding: 12px 10px 12px 0px;
+	user-select: none;
+	margin-top: 20px;
+	cursor: pointer;
+	position: relative;
+	color: #050505;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+ul li::before {
+	content: '';
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	background-image: url('https://cdn.glitch.global/1bddedb7-2c18-44aa-8f75-bfca1819a987/icons8-circle-24.png?v=1688760869005');
+	top: 17px;
+	left: 8px;
+}
+
+.checked {
+	text-decoration: line-through;
+}
+
+.checked::before {
+	background-image: url('https://cdn.glitch.global/1bddedb7-2c18-44aa-8f75-bfca1819a987/icons8-checked-24.png?v=1688760860105');
+}
+
+span {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+span:hover {
+	background-color: #edeef0;
+}
+
+@media all and (max-width: 768px) {
+	* {
+		font-size: 16px;
+	}
+
+	h1 {
+		font-size: 34px;
+		margin-bottom: 20px;
+	}
+
+	ul li {
+		padding: 10px 8px 10px 40px;
+	}
+
+	ul li::before {
+		top: 12px;
+	}
+}
